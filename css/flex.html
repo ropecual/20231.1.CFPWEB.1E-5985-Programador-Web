@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body,html{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            background-color: bisque;
+            
+        }
+
+        #flex{
+            width: 90%;
+            height: 90%;
+            background-color: chocolate;
+            margin: auto;
+            margin-top: 5%;
+            display: flex;
+            /*flex-wrap: nowrap; */
+            flex-wrap: wrap;
+
+        }
+
+        .filho{
+            border: 2px solid black;
+            flex-basis: 100%;
+        }
+
+        .filho2{
+            flex-basis: 30%;
+        }
+
+        .filho3 {
+            flex-basis: 70%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="flex">
+        <div class="filho filho1">Filho 1</div>
+        <div class="filho filho2">Filho 2</div>
+        <div class="filho filho3" >Filho 3</div>
+        <div class="filho filho4">Filho 4</div>
+    </div>
+
+
+</body>
+
+</html>

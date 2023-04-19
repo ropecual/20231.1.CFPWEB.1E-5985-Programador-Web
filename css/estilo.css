@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+
+.r {
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 100px;
+    height: 100px;
+}
+
+.g {
+    background-color: rgb(0, 255, 0);
+    width: 100px;
+    height: 100px;
+}
+
+.b {
+    background-color: rgb(0, 0, 255);
+    width: 100px;
+    height: 100px;
+}

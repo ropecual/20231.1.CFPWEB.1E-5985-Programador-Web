@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+</head>
+<body>
+    <form action="">
+        <input type="date" name="date" id="date" value="1990-10-10">
+        <hr>
+        <input type="color" name="color" id="color" value="#FF0000" disabled>
+        <hr>
+        <label for="">
+            Aceito os termos
+            <input type="checkbox" name="check" id="check" checked>
+            <input type="checkbox" name="check" id="check">
+        </label>
+        <hr>
+        <label for="">
+            <input type="radio" name="radio" id="radio" value="M" checked>Masculino
+            <input type="radio" name="radio" id="radio" value="F">Feminino
+        </label>
+        <hr>
+        <label for="email">
+            Email:
+            <input type="email" name="email" id=""  size=70 placeholder="Digite seu email" required>
+        </label>
+        <hr>
+        <input type="text" name="email" id="" maxlength="20"  minlength="6" size=70 placeholder="Digite seu email" required>
+        <hr>
+        <input type="number" name="number" id="" placeholder="Idade" min="0" max="100" step="2">
+        <hr>
+        <input type="time" name="time" id="" autofocus>
+        <hr>
+        <input type="range" name="range" id="" min="0" max="100" step="2">
+        <hr>
+        <input type="file" name="file" id="">
+        <hr>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
