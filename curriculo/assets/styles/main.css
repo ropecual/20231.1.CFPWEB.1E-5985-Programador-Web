@@ -1,0 +1,141 @@
+:root{
+    --cor1: #000;
+    --cor2: #2e2e2e;
+    --cor3: #f8d33b;
+    --cor4: #f5fced;
+}
+
+@font-face {
+    font-family: 'MADETommy';
+    src: url('/assets/fonts/made_tommy/MADE TOMMY Regular_PERSONAL USE.otf');
+}
+
+/* Todos os elementos da pagina */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* Essa propriedade faz você considerar a borda no alinhamento dos objetos */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: 'MADETommy', Arial, Helvetica, sans-serif;
+}
+
+
+#page {
+    max-width: 1090px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: var(--cor2);
+    min-height: 600px;
+ 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    background-color: transparent;
+    min-height: 300px;
+}
+
+#sobre, #experiencias {
+    background-color: var(--cor1);
+    min-height: 300px;
+    display: flex;
+}
+
+#sobre .profile img{
+    max-width: 400px;
+}
+
+#sobre .apresentacao{
+    color: var(--cor4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+#sobre .apresentacao>h1{
+    color: var(--cor3);
+}
+
+
+#contato{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:  var(--cor4);
+    height: 100%;
+    padding: 30px;
+    border: 2px solid var(--cor3);
+    border-left: none;
+}
+
+#contato>*{
+    padding: 10px;
+}
+
+#contato>h3,#contato label{
+    color: var(--cor3);
+    margin: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+#contato a, #contato a:visited{
+    color: var(--cor4);
+}
+
+#educacao {
+    width: 70%;
+    border: 2px solid var(--cor3);
+    border-right: none;
+    position: relative;
+    padding: 60px;
+}
+
+#educacao>.legenda {
+    width: 320px;
+    height: 68px;;
+    padding-left: 15px;
+    border-radius: 12px;
+    background-color: var(--cor3);
+    line-height: 68px;
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    top: -38px;
+
+    
+}
+
+#educacao ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#educacao .curso {
+    width: 50%;
+}
