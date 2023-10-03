@@ -41,6 +41,20 @@ console.log(frutas)
 
 // Percorrendo listas
 
-for (let indice = 0; indice > frutas.length; indice++) {
+for (let indice = 0; indice < frutas.length; indice++) {
     console.log(`A fruta n ${indice} eh a ${frutas[indice]}`)
 }
+
+// percorrendo com foreach
+frutas.forEach((item, index) => {
+    console.log(`FOREACH A fruta n ${index} eh a ${item}`)
+})
+
+// alterando um elemento da lista
+frutas.forEach((item, index,nova_frutas) => {
+    console.log(`FOREACH A fruta n ${index} eh a ${item}`)
+    if (item == 'lima') {
+        nova_frutas[index] = 'Jaca'
+    }
+})
+console.log(frutas)
