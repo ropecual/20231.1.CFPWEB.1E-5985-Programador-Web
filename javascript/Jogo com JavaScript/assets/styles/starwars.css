@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#painel > h5 {
+    font-size: 2em;
+    color: #bc0a24;
+}
+
+#placar {
+    color: black;
+    background-color: #fffA;
+    position: fixed;
+    right: 0;
+    top:0;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+#placar>span {
+    font-size: 2em;
+}
+
+
+.nave {
+    position: fixed;
+    z-index: 3;
+}
+
+
+.laser {
+    position: fixed;
+    z-index: 4;
+    width: 2px;
+    height: 25px;
+    background-color: white;
+    -webkit-animation: lazer1 1.5s ease-in-out infinite alternate;
+    -moz-animation: lazer1 1.5s ease-in-out infinite alternate;
+    animation: lazer1 1.5s ease-in-out infinite alternate;
+}
+
+
+.laser.inimigo {
+    background-color: #bc0a24;
+}
+
+
+.explosao {
+    position: fixed;
+}
+
+/*glow for webkit*/
+@-webkit-keyframes lazer1 {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #7BDC0CFF, 0 0 70px #7BDC0CFF, 0 0 80px #7BDC0CFF, 0 0 100px #7BDC0CFF, 0 0 150px #7BDC0CFF;
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7BDC0CFF, 0 0 35px #7BDC0CFF, 0 0 40px #7BDC0CFF, 0 0 50px #7BDC0CFF, 0 0 75px #7BDC0CFF;
+    }
+}
+
+/*glow for mozilla*/
+@-moz-keyframes lazer1 {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #7bdc0c, 0 0 70px #7BDC0CFF, 0 0 80px #7BDC0CFF, 0 0 100px #7BDC0CFF, 0 0 150px #7BDC0CFF;
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7BDC0CFF, 0 0 35px #7BDC0CFF, 0 0 40px #7BDC0CFF, 0 0 50px #7BDC0CFF, 0 0 75px #7BDC0CFF;
+    }
+}
+
+/*glow*/
+@keyframes lazer1 {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #7BDC0CFF, 0 0 70px #7BDC0CFF, 0 0 80px #7BDC0CFF, 0 0 100px #7BDC0CFF, 0 0 150px #7BDC0CFF;
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7BDC0CFF, 0 0 35px #7BDC0CFF, 0 0 40px #7BDC0CFF, 0 0 50px #7BDC0CFF, 0 0 75px #7BDC0CFF;
+    }
+}

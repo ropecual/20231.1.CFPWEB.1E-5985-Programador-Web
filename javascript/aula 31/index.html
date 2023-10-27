@@ -97,19 +97,21 @@
 </head>
 <body>
 <div id="cx-login">
-    <h1>Login</h1>
+    <!-- Chamando uma funcao pra mudar a cor -->
+    <!-- Se, ao chamar a funcao, por exemplo mudarCor() for passado "this" - mudarCor(this) a funcao ira ativar no elemento em si
+    <h1 onclick="mudarCor(document.getElementById('cx-login'),'green')">Login</h1>
 
     <label>
         Login:
-        <br>
-        <input type="text" name="loginhh" id="login">
+        <br> <!-- o preventDefault() impede de executar a acao se colocar no Body, impede botao direito-->
+        <input type="text" name="loginhh" id="login" oncontextmenu="event.preventDefault()">
     </label>
     <label>
         Senha:
         <br>
         <input type="text" name="senha" id="senha">
     </label>
-    <button type="submit" class="btn">Logar</button>
+    <button type="submit" class="btn" onclick="logar()">Logar</button>
 </div>
 <script src="script.js"></script>
 </body>
